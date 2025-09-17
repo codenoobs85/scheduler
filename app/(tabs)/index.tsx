@@ -74,6 +74,15 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
       </ThemedView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Step 4: Add interactive components</ThemedText>
+        <ThemedText>
+          You can add interactive components to your app. For example, you can add a button to open the camera.
+        </ThemedText>
+        <Link href="/camera">
+          <ThemedText>Open Camera</ThemedText>
+        </Link>
+      </ThemedView>
     </ParallaxScrollView>
   );
 }
