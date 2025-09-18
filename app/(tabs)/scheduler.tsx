@@ -38,7 +38,10 @@ const TimetableScheduler = () => {
 
     const top = startTimeIndex * CELL_HEIGHT;
     const left = dayIndex * DAY_WIDTH;
-    const height = (endTimeIndex - startTimeIndex) * CELL_HEIGHT - 2; // -2 for margin
+    let height = (endTimeIndex - startTimeIndex) * CELL_HEIGHT - 2; // -2 for margin
+    if (height < 0) {
+        height = CELL_HEIGHT - 2;
+    }
     const width = DAY_WIDTH - 2; // -2 for margin
 
     return { top, left, height, width };
